@@ -1,0 +1,82 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to right, rgb(19, 135, 125), rgb(18, 44, 61));   
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+fieldset {
+    border: 3px solid rgb(34, 207, 199);
+}
+
+legend {
+    border: 1px solid rgb(35, 206, 198);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(34, 207, 199);
+    border-radius: 5px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ label.labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: rgb(35, 206, 198);
+}
+
+#data_nascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 9px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit {
+    background-image: linear-gradient(to right,rgb(26, 238, 220), rgb(18, 98, 151));
+    width: 100%;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 5.5rem;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-image: linear-gradient(to right, rgb(19, 135, 125), rgb(18, 44, 61));
+    transition: 0.3ms;
+}
